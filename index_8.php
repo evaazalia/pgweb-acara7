@@ -1,16 +1,15 @@
-<?php
-include 'vars.php';
-echo "Sebuah $buah $warna"; // ini akan error kalau vars.php belum dimuat
-echo "<br>Sebuah $buah $warna"; // akan menampilkan: Sebuah apel hijau
-?>
+<!-- URL -->
+<?php 
+echo '<a href="vars.php?nama=Merapi&alamat=Sleman">Gunung</a><br><br>'; 
+?> 
 
-<html>
-<body>
-<?php
-function tulisNama() {
-  echo "<br>Merapi";
-}
-tulisNama();
-?>
-</body>
+<!-- Form -->
+<html> 
+<body> 
+<form action="welcome.php" method="post"> 
+Nama: <input type="text" name="nama" /> 
+Umur: <input type="text" name="umur" /> 
+<input type="submit" value="Kirim"/> 
+</form> 
+</body> 
 </html>

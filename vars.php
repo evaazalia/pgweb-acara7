@@ -1,10 +1,9 @@
 <?php
 $buah = "apel";
 $warna = "hijau";
-?>
 
-<?php 
-$nama = $_GET['nama']; 
-$alamat = $_GET['alamat']; 
-echo "Nama gunung adalah Gunung $nama beralamat di $alamat"; 
+$nama = $_GET['nama'] ?? 'Merapi';
+$alamat = $_GET['alamat'] ?? 'Yogyakarta';
+
+echo "Nama gunung adalah Gunung $nama beralamat di $alamat";
 ?>

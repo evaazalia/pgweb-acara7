@@ -1,37 +1,42 @@
+<!-- pemilihan kondisi if...else -->
+<html> 
+<body> 
 <?php 
-$nama[0] = "Joko"; 
-$nama[1] = "Parto"; 
-$nama[2] = "Jono"; 
-echo $nama[1]." dan ".$nama[2]." adalah tetangga Pak ".$nama[0]; 
+$d = date("D"); 
+if ($d == "Sat") 
+    echo "Selamat berakhir pekan!<br>"; 
+else 
+    echo "Semoga hari anda menyenangkan!<br>"; 
 ?> 
+</body> 
+</html>
 
-<?php
-$umur = array("Joko"=>33, "Parto"=>35, "Jono"=>29);
-echo '<pre>';
-print_r($umur);
-echo '</pre>';
-?>
+<!-- pemilihan kondisi elseif -->
+<html> 
+<body> 
+<?php 
+$d = date("D"); 
+if ($d == "Sat") 
+    echo "Selamat berakhir pekan!<br>"; 
+elseif ($d == "Sun") 
+    echo "Semoga hari Minggu anda menyenangkan!<br>"; 
+else 
+    echo "Semoga hari anda menyenangkan!<br>"; 
+?> 
+</body> 
+</html>
 
-<?php
-$keluarga = array 
-( 
-"Joko"=>array 
-( 
-"Jojon", 
-"Joni", 
-"Joana" 
-), 
-"Parto"=>array 
-( 
-"Parmi"
-),
-"Warto"=>array 
-( 
-"Warman", 
-"Warno", 
-"Warmin" 
-) 
-);
-echo $keluarga["Joko"][2] ." adalah anggota keluarga Joko";
-?>
-
+<!-- pemilihan kondisi switch -->
+<html> 
+<body> 
+<?php 
+$x = 2; 
+switch ($x) { 
+    case 1: echo "Angka 1<br>"; break; 
+    case 2: echo "Angka 2<br>"; break; 
+    case 3: echo "Angka 3<br>"; break; 
+    default: echo "Bukan angka antara 1 sampai 3<br>"; 
+} 
+?> 
+</body> 
+</html>

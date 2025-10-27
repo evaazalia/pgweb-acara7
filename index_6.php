@@ -1,43 +1,40 @@
-<html> 
-<body> 
-<?php 
-$d=date("D"); 
-if ($d=="Sat") 
-echo "Selamat berakhir pekan!"; 
-else 
-echo "Semoga hari anda menyenangkan!"; 
-?> 
-</body> 
-</html>
+<!-- perulangan while -->
+<html>
+<body>
 
-<html> 
-<body> 
+#WHILE<br>
 <?php 
-$d=date("D"); 
-if ($d=="Sat") 
-echo "Selamat berakhri pekan!"; 
-elseif ($d=="Sun") 
-echo "Semoga hari Minggu anda menyenangkan!"; 
-else 
-echo "Semoga hari anda menyenangkan!"; 
-?> 
-</body> 
-</html>
+$i = 1;
+while ($i <= 5) {
+    echo "Angka " . $i . "<br />";
+    $i++;
+}
+?>
 
-<html> 
-<body> 
+<!-- perulangan do while-->
+<br>#DO WHILE<br>
 <?php 
-$x = 2; 
-switch ($x) 
-{ 
-case 1: echo "Angka 1"; 
-break; 
-case 2: echo "Angka 2"; 
-break; 
-case 3: echo "Angka 3"; 
-break; 
-default:echo "Bukan angka antara 1 sampai 3"; 
-} 
-?> 
-</body> 
+$i = 0;
+do {
+    $i++;
+    echo "Angka " . $i . "<br />";
+} while ($i < 5);
+?>
+
+<br>#FOR<br>
+<?php 
+for ($i = 1; $i <= 5; $i++) {
+    echo "Hello World!<br />";
+}
+?>
+
+<!-- perulangan foreach-->
+<br>#FOREACH<br>
+<?php 
+$arr = array("satu", "dua", "tiga");
+foreach ($arr as $nilai) {
+    echo "Nilai: " . $nilai . "<br />";
+}
+?>
+</body>
 </html>
